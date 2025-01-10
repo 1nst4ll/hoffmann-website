@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion';
 import { PuzzlePiece } from '../animations/PuzzlePiece';
+import { Button } from '../ui/Button';
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-ocean-100 to-white">
+    <section 
+      id="hero" 
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-ocean-100 to-white"
+    >
       <div className="container mx-auto px-4 py-20 flex flex-col items-center text-center space-y-8">
         <motion.h1 
           className="text-5xl md:text-7xl font-display text-ocean-900"
@@ -11,7 +15,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Connecting Pieces, Creating Solutions
+          Connecting Pieces,<br />Creating Solutions
         </motion.h1>
         
         <motion.p
@@ -20,7 +24,8 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Your trusted partner bridging international expertise with local know-how in Turks & Caicos
+          Your trusted partner bridging international expertise with local know-how 
+          in Turks & Caicos
         </motion.p>
 
         <div className="flex justify-center space-x-4">
@@ -35,12 +40,18 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <button className="bg-ocean-500 text-white px-8 py-3 rounded-md hover:bg-ocean-600 transition-colors">
+          <Button 
+            variant="primary"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Get Started
-          </button>
-          <button className="border-2 border-ocean-500 text-ocean-500 px-8 py-3 rounded-md hover:bg-ocean-50 transition-colors">
+          </Button>
+          <Button 
+            variant="outline"
+            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Learn More
-          </button>
+          </Button>
         </motion.div>
       </div>
     </section>
