@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "title": "Connecting Pieces, Creating Solutions",
+    "subtitle": "Your trusted partner bridging international expertise with local island know-how in Turks & Caicos",
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "Learn More"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions for your business and immigration needs",
+    "hospitality": {
+      "title": "Hospitality Consultancy",
+      "description": "Expert guidance in cost control, digital solutions, and process optimization for hospitality businesses."
+    },
+    "immigration": {
+      "title": "Immigration & Compliance",
+      "description": "Professional assistance with visas, permits, and citizenship applications."
+    },
+    "hr": {
+      "title": "Human Resources",
+      "description": "Complete HR solutions including recruitment, training, and cultural integration."
+    },
+    "digital": {
+      "title": "Digital Services",
+      "description": "Modern digital solutions from online presence management to technical integration."
+    }
+  }
+}
