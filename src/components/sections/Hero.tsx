@@ -1,8 +1,12 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { PuzzlePiece } from '../animations/PuzzlePiece';
 import { Button } from '../ui/Button';
+import { useScrollTo } from '@/hooks/useScrollTo';
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
+  const scrollTo = useScrollTo();
+
   return (
     <section 
       id="hero" 
@@ -42,13 +46,13 @@ export const Hero = () => {
         >
           <Button 
             variant="primary"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => scrollTo('contact')}
           >
             Get Started
           </Button>
           <Button 
             variant="outline"
-            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => scrollTo('services')}
           >
             Learn More
           </Button>
