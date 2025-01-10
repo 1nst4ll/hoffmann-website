@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 interface PuzzlePieceProps {
@@ -7,11 +7,11 @@ interface PuzzlePieceProps {
   size?: number;
 }
 
-export const PuzzlePiece = ({
+export const PuzzlePiece: React.FC<PuzzlePieceProps> = ({
   delay = 0,
   color = '#0082A3',
   size = 40,
-}: PuzzlePieceProps) => {
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8, y: 20 }}
