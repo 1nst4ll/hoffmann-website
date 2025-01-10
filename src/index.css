@@ -7,9 +7,27 @@
 @layer base {
   html {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Marcellus', serif;
+  }
+
+  body {
+    @apply text-gray-900 antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ocean-300 rounded-full hover:bg-ocean-400 transition-colors;
   }
 }
